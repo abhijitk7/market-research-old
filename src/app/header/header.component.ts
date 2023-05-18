@@ -6,6 +6,29 @@ import { Component, OnInit } from "@angular/core"
   styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent implements OnInit {
+  navLinks: any[] = [
+    {
+      displayText: "Home",
+      link: "#home",
+    },
+    {
+      displayText: "About",
+      link: "#about",
+    },
+    {
+      displayText: "Services",
+      link: "#service",
+    },
+    {
+      displayText: "Contact",
+      link: "#contact",
+    },
+    {
+      displayText: "Get Started",
+      link: "#about",
+    },
+  ]
+
   constructor() {}
 
   ngOnInit(): void {
