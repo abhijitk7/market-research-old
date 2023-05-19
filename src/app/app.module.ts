@@ -1,22 +1,26 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core"
+import { BrowserModule } from "@angular/platform-browser"
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
+import { AppRoutingModule } from "./app-routing.module"
+import { AppComponent } from "./app.component"
+import { ContentComponent } from "./components/content/content.component"
+import { ContactComponent } from "./components/content/contact/contact.component"
+import { ReactiveFormsModule } from "@angular/forms"
+import { HeaderComponent } from "./components/header/header.component";
+import { ToastComponent } from './components/toast/toast.component';
+import { ToasterComponent } from './components/toaster/toaster.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    ContactComponent,
+    ToastComponent,
+    ToasterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

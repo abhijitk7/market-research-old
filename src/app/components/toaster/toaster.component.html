@@ -1,0 +1,6 @@
+<div class="toaster position-fixed bottom-0 start-50 translate-middle-x">
+    <div *ngFor="let toast of currentToasts; index as i">
+        <app-toast [type]="toast.type" [title]="toast.title" [message]="toast.message"
+            (disposeEvent)="dispose(i)"></app-toast>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core"
+import { FormBuilder, FormGroup } from "@angular/forms"
 
 @Component({
   selector: "app-content",
@@ -8,7 +9,5 @@ import { Component, OnInit } from "@angular/core"
 export class ContentComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
-    console.log("Initialised")
-  }
+  ngOnInit(): void {}
 }
