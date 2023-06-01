@@ -6,9 +6,10 @@ import { AppComponent } from "./app.component"
 import { ContentComponent } from "./components/content/content.component"
 import { ContactComponent } from "./components/content/contact/contact.component"
 import { ReactiveFormsModule } from "@angular/forms"
-import { HeaderComponent } from "./components/header/header.component";
-import { ToastComponent } from './components/toast/toast.component';
-import { ToasterComponent } from './components/toaster/toaster.component'
+import { HeaderComponent } from "./components/header/header.component"
+import { ToastComponent } from "./components/toast/toast.component"
+import { ToasterComponent } from "./components/toaster/toaster.component"
+import { NgxCaptchaModule } from "ngx-captcha"
 
 @NgModule({
   declarations: [
@@ -19,7 +20,12 @@ import { ToasterComponent } from './components/toaster/toaster.component'
     ToastComponent,
     ToasterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgxCaptchaModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
