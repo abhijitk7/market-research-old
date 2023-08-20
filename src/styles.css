@@ -1,0 +1,4 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+body {
+    padding-top: 70px; /* Adjust the value as needed based on your header height */
+  }

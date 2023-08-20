@@ -9,15 +9,15 @@ export class HeaderComponent implements OnInit {
   navLinks: any[] = [
     {
       displayText: "Home",
-      link: "#home",
+      link: "home",
     },
     {
       displayText: "About",
       link: "#about",
     },
     {
-      displayText: "Services",
-      link: "#service",
+      displayText: "Reports",
+      link: "reports",
     },
     {
       displayText: "Contact",

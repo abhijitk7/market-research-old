@@ -10,6 +10,9 @@ import { HeaderComponent } from "./components/header/header.component"
 import { ToastComponent } from "./components/toast/toast.component"
 import { ToasterComponent } from "./components/toaster/toaster.component"
 import { NgxCaptchaModule } from "ngx-captcha"
+import { ReportsComponent } from "./components/reports/reports.component"
+import { FooterComponent } from "./components/footer/footer.component"
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { NgxCaptchaModule } from "ngx-captcha"
     ContactComponent,
     ToastComponent,
     ToasterComponent,
+    ReportsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     NgxCaptchaModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
