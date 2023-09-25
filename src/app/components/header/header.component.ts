@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       displayText: "Reports",
-      link: "reports",
+      link: "#reports",
     },
     {
       displayText: "Contact",

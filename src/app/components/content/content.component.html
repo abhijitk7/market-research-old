@@ -269,7 +269,7 @@
       </section><!-- End Skills Section -->
 
     <!-- ======= Services Section https://boxicons.com/ ======= -->
-    <section id="services" class="services section-bg">
+    <section id="reports" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -281,7 +281,7 @@
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in"
             *ngFor="let category of categories" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box" [routerLink]="['/list',category.id]">
               <div class="icon"><i [ngClass]="category.icon"></i></div>
               <h4><a href="">{{category.name}}</a></h4>
               <p>{{category.description}}</p>

@@ -13,6 +13,9 @@ import { NgxCaptchaModule } from "ngx-captcha"
 import { ReportsComponent } from "./components/reports/reports.component"
 import { FooterComponent } from "./components/footer/footer.component"
 import { HttpClientModule } from "@angular/common/http"
+import { ReportListComponent } from "./components/report-list/report-list.component"
+import { RouterModule } from "@angular/router"
+import { HashLocationStrategy, LocationStrategy } from "@angular/common"
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { HttpClientModule } from "@angular/common/http"
     ToasterComponent,
     ReportsComponent,
     FooterComponent,
+    ReportListComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,7 @@ import { HttpClientModule } from "@angular/common/http"
     NgxCaptchaModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

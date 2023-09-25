@@ -1,0 +1,11 @@
+.report-list-container {
+        border: 0px solid lightgray;
+        width: 70%;
+        margin: 10px auto;
+        border-radius: 14px;
+        margin-top: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+}
